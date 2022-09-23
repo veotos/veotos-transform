@@ -13,10 +13,11 @@ def test_transform_Leo():
     assert 'Miu' == find_new_text(text_to_convert, 1)
 
 
-def test_transform_Taisir_Aviles():
-    text_to_convert = 'Taisir Aviles'
+def test_transform_Taisir():
+    text_to_convert = 'Taisir'
     assert text_to_convert == find_new_text(text_to_convert, 0)
-    assert 'Veotos Ewomit' == find_new_text(text_to_convert, 1)
+    assert 'Veotos' == find_new_text(text_to_convert, 1)
+    assert 'Zaiyix' == find_new_text(text_to_convert, 5)
 
 
 def test_transform_Taisir_Aviles_with_special_character():
