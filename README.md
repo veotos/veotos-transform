@@ -1,6 +1,7 @@
 # Veotos transform
 Obfuscate text replacing each consonant with next consonant in the ASCII consonants and vowel with next vowel in the ASCII vowels,
-plus some diacritical marks over vowels. Upper and lower case letters are both supported.
+plus some diacritical marks over vowels. 
+Upper and lower case letters are both supported.
 
 # Example
 As there are 5 vowels and 21 consonants 105 different obfuscations exist with this algorithm. Check the iteration parameter.
