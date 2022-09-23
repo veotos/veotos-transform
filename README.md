@@ -4,8 +4,11 @@ plus some diacritical marks over vowels. Upper and lower case letters are both s
 
 # Example
 As there are 5 vowels and 21 consonants 105 different obfuscations exist with this algorithm. Check the iteration parameter.
+
 Notice that each 5 multiple will have the same vowels, and each 21 multiple will have the same consonants (they usually can be read and
-sound funny). Enjoy!
+sound funny).
+
+Enjoy!
 
 ```python
 from veotos_transform import find_new_text
@@ -37,7 +40,7 @@ for iteration in range(0, 106):
 |018      |   Jv heru ap qdu urukakc xnuuwu qeiydakc vein pgak   |
 |019      |   Kw jisa eq rfa asaleld ypaaxa riozfeld wiop qhel   |
 |020      |  _Lx kote ir sge etemimf zqeeye soubgimf xouq rjim_  |
-|021      |** My luvi os thi ivinong briizi tuachong yuar skon **|
+|021      | **My luvi os thi ivinong briizi tuachong yuar skon** |
 |022      |   Nz mawo ut vjo owopuph csoobo vaedjuph zaes tlup   |
 |023      |   Pb nexu av wku uxuqaqj dtuucu weifkaqj beit vmaq   |
 |024      |   Qc piya ew xla ayarerk fvaada xioglerk ciov wner   |
@@ -58,7 +61,7 @@ for iteration in range(0, 106):
 |039      |   Jv hira ep qda arakekc xnaawa qioydekc vion pgek   |
 |040      |  _Kw jose iq rfe eselild ypeexe rouzfild woup qhil_  |
 |041      |   Lx kuti or sgi itimomf zqiiyi suabgomf xuaq rjom   |
-|042      |** My lavo us tho ovonung broozo taechung yaer skun **|
+|042      | **My lavo us tho ovonung broozo taechung yaer skun** |
 |043      |   Nz mewu at vju uwupaph csuubu veidjaph zeis tlap   |
 |044      |   Pb nixa ev wka axaqeqj dtaaca wiofkeqj biot vmeq   |
 |045      |  _Qc poye iw xle eyerirk fveede xouglirk couv wnir_  |
@@ -79,7 +82,7 @@ for iteration in range(0, 106):
 |060      |  _Jv hore ip qde erekikc xneewe qouydikc voun pgik_  |
 |061      |   Kw jusi oq rfi isilold ypiixi ruazfold wuap qhol   |
 |062      |   Lx kato ur sgo otomumf zqooyo saebgumf xaeq rjum   |
-|063      |** My levu as thu uvunang bruuzu teichang yeir skan **|
+|063      | **My levu as thu uvunang bruuzu teichang yeir skan** |
 |064      |   Nz miwa et vja awapeph csaaba viodjeph zios tlep   |
 |065      |  _Pb noxe iv wke exeqiqj dteece woufkiqj bout vmiq_  |
 |066      |   Qc puyi ow xli iyirork fviidi xuaglork cuav wnor   |
@@ -100,7 +103,7 @@ for iteration in range(0, 106):
 |081      |   Jv huri op qdi irikokc xniiwi quaydokc vuan pgok   |
 |082      |   Kw jaso uq rfo osoluld ypooxo raezfuld waep qhul   |
 |083      |   Lx ketu ar sgu utumamf zquuyu seibgamf xeiq rjam   |
-|084      |** My liva es tha avaneng braaza tiocheng yior sken **|
+|084      | **My liva es tha avaneng braaza tiocheng yior sken** |
 |085      |   _Nz mowe it vje ewepiph cseebe voudjiph zous tlip_   |
 |086      |   Pb nuxi ov wki ixiqoqj dtiici wuafkoqj buat vmoq   |
 |087      |   Qc payo uw xlo oyorurk fvoodo xaeglurk caev wnur   |
