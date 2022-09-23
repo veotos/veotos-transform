@@ -5,7 +5,10 @@ plus some diacritical marks over vowels.
 Upper and lower case letters are both supported.
 
 # Example
-As there are 5 vowels and 21 consonants 105 different obfuscations exist with this algorithm. Check the iteration parameter.
+As there are 5 vowels and 21 consonants 105 different obfuscations exist with this algorithm. 
+If optional iteration parameter is 0 or any multiple of 105 will result in the same text. 
+
+Default value of iteration parameter is number 1.
 
 Notice that each 5 multiple will have the same vowels, and each 21 multiple will have the same consonants (they usually can be read and
 sound funny).
