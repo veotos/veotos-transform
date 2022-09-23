@@ -1,6 +1,7 @@
 # Veotos transform
 Obfuscate text replacing each consonant with next consonant in the ASCII consonants and vowel with next vowel in the ASCII vowels,
 plus some diacritical marks over vowels. 
+
 Upper and lower case letters are both supported.
 
 # Example
