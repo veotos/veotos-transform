@@ -20,13 +20,13 @@ for group in GROUPS_TO_TRANSFORM.copy():
 
 def wrapping_slice(string, start):
     """
-    Given a :string return another string beginning at :start
-    wrapping around the length of the :string.
-    Visualize this:
-    Glue the beginning and the end of the given :string and go to
-    position given by :start to make a cut there to get a list again.
-    """
+    Given a :string return another string beginning at :start:
+        wrapping around the length of the :string:.
 
+    Visualize this:
+        Glue the beginning and the end of the given :string: and go to
+        position given by :start: to make a cut there to get a list again.
+    """
     return ''.join([string[i % len(string)]
                     for i in range(start, len(string) + start)])
 
@@ -34,17 +34,13 @@ def wrapping_slice(string, start):
 def find_new_text(text, iteration):
     """
     Returns the new text that will substitute every consonant or vowel
-    from the ascii characters with the next iteration-th consonant or vowel
+    from the ASCII characters with the next iteration-th consonant or vowel.
     """
-
     for value in GROUPS_TO_TRANSFORM:
-
         code = (f"table = ''.maketrans('{value}', "
                 f"wrapping_slice('{value}',{iteration}))")
-
         exec(code, globals())
         text = text.translate(table)
-
     return text
 
 
