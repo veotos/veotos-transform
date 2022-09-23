@@ -1,3 +1,4 @@
+from typing import Optional
 from string import ascii_lowercase
 
 VOWELS_LOWERCASE = 'aeiou'
@@ -18,7 +19,7 @@ for group in GROUPS_TO_TRANSFORM.copy():
     GROUPS_TO_TRANSFORM.append(group.upper())
 
 
-def wrapping_slice(string, start):
+def wrapping_slice(string: str, start: Optional[int] = 1) -> str:
     """
     Given a :string return another string beginning at :start:
         wrapping around the length of the :string:.
@@ -31,7 +32,7 @@ def wrapping_slice(string, start):
                     for i in range(start, len(string) + start)])
 
 
-def find_new_text(text, iteration):
+def find_new_text(text: str, iteration: Optional[int] = 1) -> str:
     """
     Returns the new text that will substitute every consonant or vowel
     from the ASCII characters with the next iteration-th consonant or vowel.
