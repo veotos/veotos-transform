@@ -38,8 +38,8 @@ def test_transform_España():
 
 def test_transform_back_again():
     """
-    105 = the product of 5 vowels and 23 consonants (minimum common multiple)
-    The minimum common multiple in iteration number results in the same text.
+    105 = the product of 5 vowels and 23 consonants (least common multiple)
+    The least common multiple in iteration number results in the same text.
     """
     text_to_convert = 'Lorem ipsum dolor sit amet'
     assert text_to_convert == find_new_text(text_to_convert, 105)
