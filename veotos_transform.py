@@ -28,8 +28,8 @@ def wrapping_slice(string: str, start: Optional[int] = 1) -> str:
         Glue the beginning and the end of the given :string: and go to
         position given by :start: to make a cut there to get a list again.
     """
-    return ''.join([string[i % len(string)]
-                    for i in range(start, len(string) + start)])
+    index = start % len(string)
+    return string[index:] + string[:index]
 
 
 def find_new_text(text: str, iteration: Optional[int] = 1) -> str:
