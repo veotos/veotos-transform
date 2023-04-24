@@ -8,6 +8,8 @@ CONSONANTS_LOWERCASE = ''.join(
 ACUTE_VOWELS_LOWERCASE = 'áéíóú'
 UMLAUT_VOWELS_LOWERCASE = 'äëïöü'
 
+ENCIRCLED = 'ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏ'
+
 GROUPS_TO_TRANSFORM = []
 GROUPS_TO_TRANSFORM.append(VOWELS_LOWERCASE)
 GROUPS_TO_TRANSFORM.append(CONSONANTS_LOWERCASE)
@@ -32,7 +34,7 @@ def wrapping_slice(string: str, start: Optional[int] = 1) -> str:
     return string[index:] + string[:index]
 
 
-def find_new_text(text: str, iteration: Optional[int] = 1) -> str:
+def find_new_text(text: str, iteration: Optional[int] = 1, encircle: Optional[str]='n') -> str:
     """
     Returns the new text that will substitute every consonant or vowel
     from the ASCII characters with the next iteration-th consonant or vowel.
@@ -42,6 +44,29 @@ def find_new_text(text: str, iteration: Optional[int] = 1) -> str:
                 f"wrapping_slice('{value}',{iteration}))")
         exec(code, globals())
         text = text.translate(table)
+
+    if encircle == 'y':
+        text = encircle_text(text)
+
+    return text
+
+
+def encircle_text(text: str) -> str:
+    """
+    Encircle text
+    """
+    text = text.upper()
+    table = ''.maketrans(ACUTE_VOWELS_LOWERCASE.upper(),
+                         VOWELS_LOWERCASE.upper())
+    text = text.translate(table)
+
+    table = ''.maketrans(UMLAUT_VOWELS_LOWERCASE.upper(),
+                         VOWELS_LOWERCASE.upper())
+    text = text.translate(table)
+
+    table = ''.maketrans(ascii_lowercase.upper(), ENCIRCLED)
+    text = text.translate(table)
+
     return text
 
 
