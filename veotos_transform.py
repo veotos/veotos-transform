@@ -1,5 +1,5 @@
 from typing import Optional
-from string import ascii_lowercase
+from string import ascii_lowercase, ascii_letters
 
 VOWELS_LOWERCASE = 'aeiou'
 CONSONANTS_LOWERCASE = ''.join(
@@ -65,6 +65,19 @@ def encircle_text(text: str) -> str:
     text = text.translate(table)
 
     table = ''.maketrans(ascii_lowercase.upper(), ENCIRCLED)
+    text = text.translate(table)
+
+    return text
+
+
+def atbash(text: str) -> str:
+    """
+    Atbash for ascii letters only
+    https://en.wikipedia.org/wiki/Atbash
+    """
+    atbash_letters = ascii_letters[:len(ascii_letters)//2][::-1] + ascii_letters[len(ascii_letters)//2:][::-1]
+    table = ''.maketrans(ascii_letters,
+                         atbash_letters)
     text = text.translate(table)
 
     return text

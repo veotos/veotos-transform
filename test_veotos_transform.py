@@ -1,4 +1,4 @@
-from veotos_transform import find_new_text
+from veotos_transform import find_new_text, atbash
 
 
 def test_transform_Erik():
@@ -53,3 +53,9 @@ def test_encircle_text():
     text_to_convert = 'Lorem ipsum dolor sit amet Taisir Avilés áéíóú äëïöü'
     new_text = 'ⓁⓄⓇⒺⓂ ⒾⓅⓈⓊⓂ ⒹⓄⓁⓄⓇ ⓈⒾⓉ ⒶⓂⒺⓉ ⓉⒶⒾⓈⒾⓇ ⒶⓋⒾⓁⒺⓈ ⒶⒺⒾⓄⓊ ⒶⒺⒾⓄⓊ'
     assert new_text == find_new_text(text_to_convert, 105, encircle='y')
+
+
+def test_atbash():
+    text_to_convert = 'Lorem ipsum dolor sit amet'
+    new_text = 'Olivn rkhfn wloli hrg znvg'
+    assert new_text == atbash(text_to_convert)
