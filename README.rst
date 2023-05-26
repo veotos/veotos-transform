@@ -7,6 +7,20 @@ diacritical marks over vowels.
 
 Upper and lower case letters are both supported.
 
+Entry point
+===========
+
+.. code:: sh
+
+   $ veotos-transform --help
+
+   Usage: veotos-transform [OPTIONS] TEXT            
+                                                   
+   Options:                                          
+   --iteration INTEGER  Obfuscation iteration.     
+   --encircle           Encircle characters.       
+   --help               Show this message and exit.
+
 Example
 =======
 

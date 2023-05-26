@@ -1,4 +1,5 @@
-from .obfuscations import find_new_text, atbash
+from .context import veotos_transform
+from veotos_transform.obfuscations import find_new_text, atbash
 
 
 def test_transform_Erik():
