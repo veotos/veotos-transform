@@ -7,7 +7,7 @@ def readme():
 
 
 setup(name='veotos_transform',
-      version='0.1.1',
+      version='0.1.2',
       description='Obfuscate text with next consonant or vowel',
       long_description=readme(),
       classifiers=[
@@ -15,7 +15,7 @@ setup(name='veotos_transform',
           'Topic :: Text Processing :: Linguistic',
           'License :: OSI Approved :: GNU General Public License v3 (GPLv3)'
       ],
-      url='http://github.com/veotos/veotos_aoc',
+      url='http://github.com/veotos/veotos-transform',
       author='veotos',
       author_email='veotos@gmail.com',
       license='GPLv3',
