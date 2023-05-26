@@ -20,6 +20,9 @@ setup(name='veotos_transform',
       author_email='veotos@gmail.com',
       license='GPLv3',
       packages=['veotos_transform'],
+      install_requires=[
+          'click',
+      ],
       entry_points = {
           'console_scripts': ['veotos-transform=veotos_transform.command_line:main'],
       },
