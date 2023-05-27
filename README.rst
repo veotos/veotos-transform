@@ -10,7 +10,9 @@ Upper and lower case letters are both supported.
 Install
 =======
 .. code:: sh
+
     $ pip install veotos-transform 
+
 
 Entry point
 ===========
