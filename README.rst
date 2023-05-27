@@ -26,6 +26,10 @@ Entry point
    --encircle           Encircle characters.       
    --help               Show this message and exit.
 
+
+   $ veotos-transform --iteration 0 --encircle "Encircle option."
+   ⒺⓃⒸⒾⓇⒸⓁⒺ ⓄⓅⓉⒾⓄⓃ.
+
 Example
 =======
 
