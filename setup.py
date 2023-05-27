@@ -7,7 +7,7 @@ def readme():
 
 
 setup(name='veotos_transform',
-      version='0.1.2',
+      version='0.1.3',
       description='Obfuscate text with next consonant or vowel',
       long_description=readme(),
       classifiers=[
